@@ -13,7 +13,8 @@ I mostly utilized notebooks for their readability. In many cases, a .py file wit
 ### General Notes
 1. I had to adjust the `ingest.py` script for the following: some of the data-types in the declared schema conflicted with the formatting in the csv files. Additionally, the use of `split()` and `input_file_name()` had to be adjusted due to spaces present in the file names. Prior to these adjustments, several columns in the countries dataset were NULL, and the Year column in the olympics dataset was NULL. No worries though, regex work is fun :)
 2. As stated below, I am assuming there is no accurate way to join country names and country codes (without manually creating a dictionary or list of tuples), as names do not follow a rules based logic for generating their codes. I'd guess external API's could handle this as well, assuming the country names follow ISO standards. 
-3. If my solutions were developed in a more scalable way, the first change would be the gold modeling portion. Similar code as my third notebook could be housed in functions, that take in parameters specifying dimension or fact, ID columns, dimensional attributes, and more. 
+3. If my solutions were developed in a more scalable way, the first change would be the gold modeling portion. Similar code as my third notebook could be housed in functions, that take in parameters specifying dimension or fact, ID columns, dimensional attributes, and more.
+4. I followed a very basic branching strategy for my project: main -> dev -> feature. In reality, I would have many more feature branches throughout development to ensure code changes are completely relevant to their corresponding feature branch (and could then be deleted after merging). I'd be curious to know Holman's branching strategy so I can familiarize myself with that workflow!
 
 # BI-Dev-test
 This is for prospective BI Developers interviewing at Holman.
